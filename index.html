@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app="resumemodule">
+<head>
+<style>
+.style-div{
+	float:left;
+}
+
+.change-color-to-blue{
+	color:#3498DB;
+}
+
+.change-background-to-blue{
+	background-color:#3498DB;
+	color:white;
+	border:1 px solid black;
+}
+
+.pad-to-left-little{
+	padding-left:15px;
+}
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+
+
+<div ng-controller="resumecontroller">
+<div class="container">
+  <h1 class="text-center">DYNAMIC RESUME APP</h1><br>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="inputGroupSelect01">Select a Name to see the resume : </label>
+    </div>
+      <select class="custom-select" ng-model="selectedresume" ng-options="x.name for x in resume"></select>
+  </div>
+</div>
+
+<div ng-hide="isNull(selectedresume)">
+
+<div class="row">
+<div class="col-md-12">
+<h1 class="text-center change-color-to-blue">{{selectedresume.name}}</h1>
+</div>
+</div>
+
+<hr>
+<div class="container">
+<div class="row">
+<div class="col-sm-4 text-center"><div class="change-background-to-blue"><h4><i class="fa fa-address-card-o" aria-hidden="true"></i><span class="pad-to-left-little">ADDRESS</span></h4></div><br><h5>{{selectedresume.address}}</h5></div>
+<div class="col-sm-4 text-center"><div class="change-background-to-blue"><h4><i class="fa fa-phone" aria-hidden="true"></i><span class="pad-to-left-little">PHONE NUMBER</span></h4></div><br><h5 class="pad-to-left-little">{{selectedresume.phone}}</h5></div>
+<div class="col-sm-4 text-center"><div class="change-background-to-blue"><h4><i class="fa fa-envelope" aria-hidden="true"></i><span class="pad-to-left-little">EMAIL</span></h4></div><br><h5 class="pad-to-left-little">{{selectedresume.email}}</h5></div>
+</div>
+
+<hr>
+
+
+<div class="row">
+<div class="col-md-12">
+<div class="change-background-to-blue">
+<h1 class="text-left">PROFESSIONAL SUMMARY :<br></h1>
+</div>
+{{selectedresume.prof_summary}}
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-12">
+<div class="change-background-to-blue">
+<h1 class="text-left">ACCOMPLISHMENTS :<br> </h1>
+</div>
+<ul>
+	<li ng-repeat="acc in selectedresume.accomplishments">{{acc}}</li>
+</ul>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-12">
+<div class="change-background-to-blue">
+<h1 class="text-left">EDUCATION :<br> </h1>
+</div>
+<ul>
+	<li ng-repeat="edu in selectedresume.education">{{edu}}</li>
+</ul>
+
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-12">
+<div class="change-background-to-blue">
+<h1 class="text-left">WORK EXPERIENCE :<br> </h1>
+</div>
+<ol ng-repeat = "emp in selectedresume.employment">
+	<li><strong>Company Name : </strong>{{emp.company_name}}</li>
+	<li><strong>Work Experience :</strong> <ul ng-repeat = "exp in emp.work_exp_details">
+	<li><strong>Role</strong> : {{exp.role}}</li>
+	<li><strong>Module</strong> : {{exp.module}}</li>
+	<li><strong>Module Description</strong> : {{exp.description}}</li>
+	<li><strong>Responsibilities</strong> : <br><ul><li ng-repeat="resp in exp.responsibilities">{{resp}}</li></ul></li>
+	<li><strong>Environment</strong> {{exp.environment}}</li>
+	</ul></li>
+</ol>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-12">
+<div class="change-background-to-blue">
+<h1 class="text-left">SKILLSETS :<br> </h1>
+</div>
+<ul><li ng-repeat = "skillset in selectedresume.skills">{{skillset.skill}} - {{skillset.rating}}</li></ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<script src="resumemodule.js"></script>
+<script src="resumecontroller.js"></script>
+</body>
+</html>

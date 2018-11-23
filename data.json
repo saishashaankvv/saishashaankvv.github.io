@@ -1,0 +1,76 @@
+[{
+	"name": "SAI SHASHAANK V V",
+	"address": "FF101, Sowparnika Abode, Vaikuntam Layout, AECS Layout D Block, Kundanahalli Gate, Bangalore - 560037",
+	"email": "shashaank94@yahoo.co.in",
+	"phone": "8050587075",
+	"prof_summary": "Hands-on, successful Software Engineer with decades of verifiable success leading teams in delivering appropriate technology solutions for desktop and mobile products. Comprehensive knowledge of platform development, enterprise architecture, agile methodologies, cloud services, and web-based applications. Innovative change agent with a unique mix of high-level technology direction and deep technical expertise.",
+	"accomplishments": ["Won the Best Team Award for Building DSCMS(Digital Smart Cafeteria Management System)", "Obtained good hands-on experience in JAVA Platform, Oracle for back-end and JSP's, Servlets for front-end.", "Obtained good hands-on experience in powerful front-end technologies such as angular 4 angular JS, node JS, express, and backend technologies on JAVA such as Spring and Hibernate"],
+	"education": ["BE: ECE, Engineering MVJ College of Engineering - Bangalore, Karnataka", "12th : ISC Computer Science, Ryan International School", "10th: CBSE, Chettinad Vidyashram"],
+	"employment": [{
+	"company_name": "Zycus Infotech",
+	"work_exp_details":[{
+		"role": "Software Engineer",
+		"duration" : "August 2018 - November 2018",
+		"module": "Modify the search functionality by synchronizing the Database and Solr.",
+		"description": "Modify the existing search functionality, where a synchronization between the database and the solr utility is existent for smoother search experience.",
+		"responsibilities": ["Understand the legacy code written by other developers and gain product knowledge.", "Understand the working of Solr and implement the functionality.", "Attending SCRUM Calls everyday, Sprint planning sessions and Retrospectives.", "Develop new code for the synching process.", "Model fresh SQL Queries to match the new functionality, without disturbing the already written functionalities."],
+		"environment": ": Window 7, MongoDB, HTML, CSS, Angular Material, Android Studio, Angular 4, Java, Spring Boot, Jersey, Rest APIS"
+	}]
+	},{
+	"company_name": "Tech Mahindra",
+	"work_exp_details":[{
+		"role": "Software Engineer",
+		"duration" : "December 2015 - August 2018",
+		"module": "Makers Lab All solutions",
+		"description": "Come up with innovative ideas and build solutions and Proofs of concepts to showcase potential to customers.",
+		"responsibilities": ["Write Legacy code and gain extensive product knowledge.", "Use the right design patterns and various other methodologies.", "Attending SCRUM Calls everyday, Sprint planning sessions and Retrospectives."],
+		"environment": ": Window 7, MongoDB, HTML, CSS, Angular Material, Android Studio, Angular 4, Java, Spring Boot, Jersey, Rest APIS"
+	}]
+	}],
+	"skills": [{
+		"skill": "Java","rating":3
+	}, {
+		"skill": "Angular","rating":5
+	}, {
+		"skill": "git","rating":2
+	}]
+}, {
+	"name": "JOHN DOE",
+	"address": "Headquarters 1120 N Street Sacramento 916-654-5266",
+	"email": "john@doe.com",
+	"phone": "5675765757",
+	"prof_summary": "Award-Winning Editor Skilled in Web Design",
+	"accomplishments": ["Won the Best Team Award for leading a UI/UX team to excellence", "Obtained good hands-on experience in HTML5, CSS3 with excellent design principles.", "Obtained good hands-on experience in powerful front-end technologies such as angular 4"],
+	"education": ["BS : Computer Science, Harvard, NYC", "High School : ABC High School", "Middle School : XYZ Middle School"],
+	"employment": [
+	{
+	"company_name": "GHI Technologies",
+	"work_exp_details":[{
+		"role": "Front End Architect",
+		"module": "UI/UX Design",
+		"duration":"March 2017 - Present",
+		"description": "Design the entire wireframes from scratch for the UI of a full fledged application.",
+		"responsibilities": ["Attending SCRUM Calls everyday, Sprint planning sessions and Retrospectives.", "Develop wireframes for the entire UI", "Model responsive webpages to work on all devices"],
+		"environment": ": Window 7, MongoDB, HTML, CSS, Angular Material, Android Studio, Angular 4, Java, Spring Boot, Jersey, Rest APIS"
+	}]
+	},{
+	"company_name": "GHX Technologies",
+	"work_exp_details":[{
+		"role": "Front End Software Engineer",
+		"module": "UI/UX Design",
+		"duration":"March 2016 - March 2017",
+		"description": "Design the entire wireframes from scratch for the UI of a full fledged application.",
+		"responsibilities": ["Attending SCRUM Calls everyday, Sprint planning sessions and Retrospectives.", "Develop wireframes for the entire UI", "Model responsive webpages to work on all devices"],
+		"environment": ": Window 7, MongoDB, HTML, CSS, Angular Material, Android Studio, Angular 4, Java, Spring Boot, Jersey, Rest APIS"
+	}]
+	}],
+	"skills": [{
+		"skill": "HTML5","rating":5
+	}, {
+		"skill": "CSS3","rating":5
+	},{
+		"skill": "AngularJS","rating":4
+	}, {
+		"skill": "git","rating":3
+	}]
+}]
